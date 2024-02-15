@@ -110,11 +110,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a class="navbar-link active" href="about.html">About</a>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-link" href="resume.html">Resume</button>
+            <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
@@ -124,6 +124,94 @@
         </ul>
 
       </nav>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a final year Electronic Engineering student at HKUST from Hong Kong and am interested in data science
+            (especially in the field of biology), creating computer vision models, and web development. I am currently
+            working on my final year project titled "Optofluidic Methods and Machine Learning Techniques for the
+            Classification of Red Blood Cells Based on Young's Modulus" in MATLAB and Python.
+          </p>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Interests</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="cog-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision</h4>
+                <p class="service-item-text">
+                  Building models to analyse image and video data.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="desktop-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+                <p class="service-item-text">
+                  Analysing biological data to make timely decisions.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Making high-quality websites to promote women in STEM.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="camera-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+                <p class="service-item-text">
+                  Taking scenic photographs as a pastime.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+        </div>
+
+      </article>
 
       <script src="./assets/js/script.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
